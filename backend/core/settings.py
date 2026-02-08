@@ -9,7 +9,7 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-cfh$5qsjbaznm+%_=q+q-
 
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1,192.168.100.35').split(',')
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1,192.168.100.35,.onrender.com').split(',')
 
 INSTALLED_APPS = [
     "django.contrib.admin",
